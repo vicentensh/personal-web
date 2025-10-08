@@ -64,7 +64,7 @@ signInForm.addEventListener("submit", (e) => {
     if (usuario) {
         localStorage.setItem('usuarioLogueado', JSON.stringify(usuario));
         
-        window.location.href = "index.html";
+        window.location.href = "home.html";
     } else {
         alert("Credenciales incorrectas. Verifica tu email y contraseña.");
     }
@@ -84,11 +84,7 @@ function navegarA(pagina) {
 const btnRegistrarse = document.getElementById("btn-registrarse");
 const btnIniciarSesion = document.getElementById("btn-iniciar-sesion");
 
-if (btnRegistrarse) {
-    btnRegistrarse.addEventListener("click", () => {
-        navegarA('registro.html');
-    });
-}
+
 if (btnIniciarSesion) {
     btnIniciarSesion.addEventListener("click", () => {
         navegarA('inicio.html');
